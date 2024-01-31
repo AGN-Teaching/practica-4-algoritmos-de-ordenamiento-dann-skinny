@@ -42,13 +42,13 @@ El arreglo de 500,000 aumentó más de tiempo, cada línea en generarse tarda ap
 
 En el arreglo de 1,000,000 ya se complicó más, cada línea tardaba alrededor de 30 minutos, y tardó como 14 horas en terminar.
 
-![UML](tablaTiempoPromedio.png)
+![UML](tablaTiempoP.png)
 
-![UML](graficaTiempoPromedio.png)
+![UML](graficaTiempoP.png)
 
-![UML](tablaDesviacionEstandar.png)
+![UML](tablaDE.png)
 
-![UML](graficaDesviacionEstandar.png)
+![UML](graficaDE.png)
 
 Al intentar correr el arreglo de 5,000,000 ya no cargaba nada en mucho tiempo, entonces decidí eliminar los algoritmos de insertion sort, selection sort y bubble sort, ya que estos eran los que más se tardaba en calcular.
 
@@ -63,13 +63,13 @@ En esta parte volví a modificar el código y ahora solo deje un algoritmo y eli
 
 Para que el arreglo de 10,000,000 realice lo mismo que con el de 50 millones, a pesar de que tardan no tiene comparación con lo que tarda haciéndolos juntos, tardó como 1 hora para que salieran los resultados.
 
-![UML](tablaTiempoPromedioAG.png)
+![UML](tablaPAG.png)
 
-![UML](graficaTiempoPromedioAG.png)
+![UML](graficaTiempoPAG.png)
 
-![UML](tablaDesviacionEstandarAG.png)
+![UML](tablaDEAG.png)
 
-![UML](graficaDesviacionEstandarAG.png)
+![UML](graficaDEAG.png)
 
 Finalmente están los arreglos de 500,000,000 y 1,000,000,000 los cuales no pude correrlos, intenté con 3 compiladores diferentes y solo me cierra el programa, entonces ya no pude realizarlos.
 
@@ -78,7 +78,10 @@ CONCLUSIÓN.
 Para esta práctica hice uso de 3 computadoras, 2 de estas tienen un procesador AMD Ryzen 5 3500U, con 8 GB de RAM, Windows 11,64 bits y un SSD de 512GB. 
 La otra computadora tiene un procesador Intel Core i5 1135G7, con 8GB de RAM, Windows 10, 64 bits y un SSD de 256 GB.
 
-Utilice 3 equipos para poder avanzar más rápido ya que los tiempos de espera eran tardados. Intente correr el arreglo de 500,000,000 y 1,000,000,000 pero debido al tamaño ya no pueden ejecutarse, pienso que ya no sé puede debido a que estos arreglos ya son muy grandes y puede ser que la forma de que se puedan sacar los resultados de estos arreglos tan grandes sea que se tome la parte más eficiente del código y se divida correr los programas en partes más pequeñas para que vaya liberando espacio de memoria y no se agote.
+
+Utilice 3 equipos para poder avanzar más rápido ya que los tiempos de espera eran tardados, pero nunca separe el algoritmo, siempre ingrese un tamaño de arreglo específico y en la maquina se ejecutaba, en la parte que si separé el algortimo que fue para los arreglos más grandes se genero en la misma computadora.
+
+Intente correr el arreglo de 500,000,000 y 1,000,000,000 pero debido al tamaño ya no pueden ejecutarse, pienso que ya no sé puede debido a que estos arreglos ya son muy grandes y puede ser que la forma de que se puedan sacar los resultados de estos arreglos tan grandes sea que se tome la parte más eficiente del código y se divida correr los programas en partes más pequeñas para que vaya liberando espacio de memoria y no se agote.
 
 Al observar las gráficas y medir los tiempos podemos darnos cuenta que para los arreglos pequeños estos algoritmos son eficientes, pero ya no funcionan bien cuando son más grandes, por ejemplo, bubble sort entre más se usa menos eficiente será, esto se debe a que como compara todos los elementos de la lista en cada iteración. Por otro lado, se observa que merge sort es más eficiente, esto se debe a que este divide el arreglo en dos mitades, ordena cada mitad de forma recursiva para después juntar las dos mitades ya ordenadas.
 
